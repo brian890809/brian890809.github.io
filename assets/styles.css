@@ -37,33 +37,32 @@ a:active {
   text-decoration: underline;
 
 }
-.navbar_eng{
+/* .navbar.Enlgish{
     font-family: 'Josefin Slab';
     font-size: 25px;
     float: right;
     font-weight: bold;
-    /* padding: 20px; */
+    /* padding: 20px;
     padding-right: 130px;
     color: #707070;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    /* font-size: 20px; */
+    font-size: 20px;
     justify-content: flex-end;
     margin-top: 10px;
     height: 65px;
     text-align: center;
     width:100%;
     background-color: #F4F0E5;
-}
-.navbar_chi{
-    font-family: 'Adobe Fan Heiti Std';
+} */
+.navbar{
     font-size: 25px;
     float: right;
     padding: 20px;
     padding-right: 130px;
     color: #707070;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     list-style-type: none;
     /* font-size: 20px; */
@@ -75,12 +74,16 @@ a:active {
     text-align:right;
     margin-left: auto;
 }
-
+.navbar-item{
+  display: flex;
+  flex-direction: row;
+}
+/*
 .navbar-item-eng{
     text-decoration: none;
-}
+} */
 
-.dep_eng{
+/* .dep_eng{
     font-family: 'Josefin Sans';
     font-weight: bold;
     font-size: 40px;
@@ -91,31 +94,40 @@ a:active {
     height: 65px;
     padding-top:300px;
     float: center;
-}
-.dep_chi{
-    font-family: 'Adobe Fan Heiti Std';
+} */
+.dep{
     font-weight: bold;
     /* position: absolute; */
     font-size: 40px;
     color: #707070;
     display: flex;
-    list-style-type: none;
+    flex-direction: row;
+    /* list-style-type: none; */
     justify-content: center;
-    margin-top: -80px;
-    height: 65px;
-    float: center;
-    z-index: -1;
+    padding: auto;
+    padding-top: 90px;
+    /* height: 65px; */
+    text-align: center;
+    margin: auto;
+    line-height: 1.75;
+    /* z-index: -1; */
+}
+.dep.English{
+  padding-top: 120px;
 }
 .list{
-  padding-left: 60px;
+  /* padding-left: 60px; */
+
+  margin: auto;
 }
-.navbar-item-chi {
+.navbar-item {
   padding-left: 40px;
 }
-.navbar-item-eng {
+/* .navbar-item-eng {
   padding-left: 40px;
-}
-.mid_slogan_eng{
+} */
+
+/* .mid_slogan{
   font-family: 'Josefin Sans';
   font-weight: bold;
   font-size: 20px;
@@ -126,9 +138,8 @@ a:active {
   padding: auto;
   text-align: center;
   margin-top: 100px;
-}
-.mid_slogan_chi{
-  font-family: 'Adobe Fan Heiti Std';
+} */
+.mid_slogan{
   font-weight: bold;
   font-size: 20px;
   color: #707070;
@@ -136,14 +147,15 @@ a:active {
   flex-direction:column;
   justify-content: center;
   padding: auto;
-  margin-top: -190px;
+  padding-top: 60px;
+  /* margin-top: -190px; */
   text-align: center;
 }
 
 .arm{
   position:relative;
-  padding-left: 140px;
-  padding-top: 100px;
+  padding-left: 12%;
+  padding-top: 40px;
   animation-duration: 1.5s;
   animation-delay: 0.2s;
   animation-name: armslide;
@@ -245,7 +257,7 @@ a:active {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: space-around;
-    width: 95%;
+    width: 85%;
     align-items: center;
     margin: auto;
     padding-bottom: 80px;
@@ -253,40 +265,38 @@ a:active {
 
 
 /* About Us Page */
-.title_page_eng{
-  padding-top: 80px;
-  font-family: 'Josefin Slab';
-  font-weight: bold;
-  font-size: 35px;
-  color: #707070;
-  text-align: center;
-}
 
-.title_page_chi{
+
+.title_page{
   font-family: 'Adobe Fan Heiti Std';
   font-weight: bold;
   font-size: 35px;
   color: #707070;
   text-align: center;
-  margin-top: -160px;
+  padding-top: 90px;
+  /* margin-top: 160px; */
 }
-.BS_eng{
+/* .BS_eng{
   font-family: 'Josefin Sans';
   font-weight: bold;
   font-size: 20px;
   color: #707070;
   width: 75%;
   margin: auto;
-}
+} */
 
-.BS_chi{
-  font-family: 'Adobe Fan Heiti Std';
+.BS{
+  /* font-family: 'Adobe Fan Heiti Std'; */
   font-weight: bold;
+  text-align: left;
+  width: 70%;
+  justify-content: center;
   font-size: 20px;
   color: #707070;
   width: 75%;
   margin: auto;
-  margin-top: -80px;
+  padding-top: 40px;
+  /* margin-top: -80px; */
 }
 /* .buttons_eng{
   display: flex;
@@ -348,7 +358,7 @@ h4{
   font-size: 30px;
 }
 
-.find-us-text-eng {
+/* .find-us-text {
   text-align: left;
   padding-left: 25%;
   color: #707070;
@@ -357,17 +367,17 @@ h4{
   font-size: 20px;
   padding-bottom: 30px;
   padding-top: 10px;
-}
-.find-us-text-chi {
+} */
+.find-us-text {
   text-align: left;
   padding-left: 25%;
   color: #707070;
-  font-family: Adobe Fan Heiti Std;
+  /* font-family: Adobe Fan Heiti Std; */
   line-height: 1.5;
   font-size: 20px;
   padding-bottom: 30px;
   padding-top: 10px;
-  margin-top: -180px;
+  margin-top: 20px;
 }
 
 .map-pin {
@@ -383,10 +393,18 @@ h4{
   padding-bottom: 60px;
 }
 
+
+
 .Chinese {
-  display: block;
+  display:  block;
+  font-family: Adobe Fan Heiti Std;
 }
 
 .English {
   display: none;
+  font-family: Josefin Sans;
+}
+
+.title{
+  font-family: Josefin Slab;
 }
