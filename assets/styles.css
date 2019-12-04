@@ -1,0 +1,301 @@
+/* HomePage */
+
+body {
+    background-color: #FCE9E9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index:1000;
+}
+a:link {
+  text-decoration: none;
+  color: #707070;
+}
+a:visited {
+  color: #707070;
+}
+a:hover{
+    text-decoration: underline;
+    color: #707070;
+}
+a:active {
+  color: black;
+  text-decoration: underline;
+
+}
+.navbar_eng{
+    font-family: 'Josefin Slab';
+    font-size: 25px;
+    float: right;
+    font-weight: bold;
+    /* padding: 20px; */
+    padding-right: 130px;
+    color: #707070;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* font-size: 20px; */
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: 65px;
+    text-align: center;
+    width:100%;
+    background-color: #FCE9E9;
+}
+.navbar_chi{
+    font-family: 'Adobe Fan Heiti Std';
+    font-size: 25px;
+    float: right;
+    padding: 20px;
+    padding-right: 130px;
+    color: #707070;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* font-size: 20px; */
+    justify-content: flex-end;
+    margin-top: -12px;
+    height: 65px;
+    width:100%;
+    background-color: #FCE9E9;
+    text-align:right;
+    margin-left: auto;
+}
+
+.navbar-item-eng{
+    text-decoration: none;
+}
+
+
+#trans_img{
+  /* float:right; */
+  margin-right:auto;
+}
+.dep_eng{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 40px;
+    color: #707070;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    height: 65px;
+    padding-top:300px;
+    float: center;
+}
+.dep_chi{
+    font-family: 'Adobe Fan Heiti Std';
+    font-weight: bold;
+    /* position: absolute; */
+    font-size: 40px;
+    color: #707070;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: -80px;
+    height: 65px;
+    float: center;
+    z-index: -1;
+}
+.list{
+  padding-left: 60px;
+}
+.navbar-item-chi {
+  padding-left: 40px;
+}
+.navbar-item-eng {
+  padding-left: 40px;
+}
+.mid_slogan_eng{
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  font-size: 20px;
+  color: #707070;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  padding: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.mid_slogan_chi{
+  font-family: 'Adobe Fan Heiti Std';
+  font-weight: bold;
+  font-size: 20px;
+  color: #707070;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  padding: auto;
+  margin-top: -190px;
+  text-align: center;
+}
+
+.arm{
+  position:relative;
+  padding-left: 140px;
+  padding-top: 100px;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: armslide;
+  animation-fill-mode: forwards;
+}
+@keyframes armslide {
+  100%{
+    transform: translate(30px, 4px)
+  }
+}
+
+.pill_1{
+  width: 90px;
+  position:absolute;
+  padding-left: 100px;
+  margin-top: 100px;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: pill1slide;
+  animation-fill-mode: forwards;
+}
+@keyframes pill1slide {
+  100%{
+    transform: translate(25px, -5px);
+      transform: rotate(7deg);
+  }
+}
+.pill_2{
+  width: 40px;
+  position: absolute;
+  padding-left: 230px;
+  margin-top: 70px;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: pill2slide;
+  animation-fill-mode: forwards;
+}
+@keyframes pill2slide {
+  100%{
+    transform: translate(22px, 6px);
+      transform: rotate(-5deg);
+  }
+}
+.pill_3{
+  width: 130px;
+  position: absolute;
+  padding-left: 370px;
+  margin-top: 70px;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: pill3slide;
+  animation-fill-mode: forwards;
+}
+@keyframes pill3slide {
+  100%{
+    transform: translate(18px, -8px);
+    transform: rotate(-7deg);
+  }
+}
+.pill_4{
+  width: 40px;
+  position: absolute;
+  padding-left: 210px;
+  margin-top: 180px;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: pill4slide;
+  animation-fill-mode: forwards;
+}
+@keyframes pill4slide {
+  100%{
+    transform: translate(9px, 12px);
+    transform: rotate(-6deg);
+  }
+}
+.pill_5{
+  width: 45px;
+  position: absolute;
+  padding-left: 290px;
+  margin-top: 160px;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-name: pill5slide;
+  animation-fill-mode: forwards;
+}
+@keyframes pill5slide {
+  100%{
+    transform: translate(18px, 8px);
+    transform: rotate(-7deg);
+  }
+}
+.pharma_img {
+    height:auto;
+    width: 15%;
+    margin-top: 35px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    width: 95%;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* About Us Page */
+.title_page_eng{
+  padding-top: 80px;
+  font-family: 'Josefin Slab';
+  font-weight: bold;
+  font-size: 35px;
+  color: #707070;
+  text-align: center;
+}
+
+.title_page_chi{
+  font-family: 'Adobe Fan Heiti Std';
+  font-weight: bold;
+  font-size: 35px;
+  color: #707070;
+  text-align: center;
+  margin-top: -160px;
+}
+
+.buttons_eng{
+  font-family: 'Josefin Slab';
+  font-size: 20px;
+  color: #EBEBEB;
+  background-color: #F08F8F;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+  width: 25%;
+  margin: auto;
+  border-radius: 28px;
+  overflow:hidden;
+}
+h3{
+  padding-left:20px;
+}
+.buttons_chi{
+  font-family: 'Adobe Fan Heiti Std';
+  font-size: 20px;
+  color: #EBEBEB;
+  background-color: #F08F8F;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+  width: 26%;
+  margin: auto;
+  border-radius: 28px;
+  overflow:hidden;
+}
