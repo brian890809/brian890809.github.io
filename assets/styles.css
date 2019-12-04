@@ -62,7 +62,7 @@ a:active {
     padding: 20px;
     padding-right: 130px;
     color: #707070;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     list-style-type: none;
     /* font-size: 20px; */
@@ -74,10 +74,10 @@ a:active {
     text-align:right;
     margin-left: auto;
 }
-.navbar-item{
+/* .navbar-item{
   display: flex;
   flex-direction: row;
-}
+} */
 /*
 .navbar-item-eng{
     text-decoration: none;
@@ -117,8 +117,10 @@ a:active {
 }
 .list{
   /* padding-left: 60px; */
-
+  width: 12%;
   margin: auto;
+
+  /* margin: auto; */
 }
 .navbar-item {
   padding-left: 40px;
