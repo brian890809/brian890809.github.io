@@ -1,7 +1,14 @@
+.trans_img{
+  z-index: 1000;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
 /* HomePage */
 
 body {
-    background-color: #FCE9E9;
+    background-color: #F4F0E5;
     margin: 0;
     padding: 0;
 }
@@ -47,7 +54,7 @@ a:active {
     height: 65px;
     text-align: center;
     width:100%;
-    background-color: #FCE9E9;
+    background-color: #F4F0E5;
 }
 .navbar_chi{
     font-family: 'Adobe Fan Heiti Std';
@@ -64,7 +71,7 @@ a:active {
     margin-top: -12px;
     height: 65px;
     width:100%;
-    background-color: #FCE9E9;
+    background-color: #F4F0E5;
     text-align:right;
     margin-left: auto;
 }
@@ -73,11 +80,6 @@ a:active {
     text-decoration: none;
 }
 
-
-#trans_img{
-  /* float:right; */
-  margin-right:auto;
-}
 .dep_eng{
     font-family: 'Josefin Sans';
     font-weight: bold;
@@ -246,6 +248,7 @@ a:active {
     width: 95%;
     align-items: center;
     margin: auto;
+    padding-bottom: 80px;
 }
 
 
@@ -267,35 +270,123 @@ a:active {
   text-align: center;
   margin-top: -160px;
 }
-
-.buttons_eng{
-  font-family: 'Josefin Slab';
+.BS_eng{
+  font-family: 'Josefin Sans';
+  font-weight: bold;
   font-size: 20px;
-  color: #EBEBEB;
-  background-color: #F08F8F;
+  color: #707070;
+  width: 75%;
+  margin: auto;
+}
+
+.BS_chi{
+  font-family: 'Adobe Fan Heiti Std';
+  font-weight: bold;
+  font-size: 20px;
+  color: #707070;
+  width: 75%;
+  margin: auto;
+  margin-top: -80px;
+}
+/* .buttons_eng{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding:10px;
   width: 25%;
   margin: auto;
   border-radius: 28px;
-  overflow:hidden;
 }
 h3{
   padding-left:20px;
-}
-.buttons_chi{
-  font-family: 'Adobe Fan Heiti Std';
-  font-size: 20px;
+  font-family: 'Josefin Slab';
+  font-size: 25px;
   color: #EBEBEB;
   background-color: #F08F8F;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding:10px;
+  margin:10px;
+  width: 52%;
+  margin: auto;
+  border-radius: 10px;
+  padding:7px;
+    text-align:center;
+}
+h4{
+  padding-left:20px;
+  font-family: 'Adobe Fan Heiti Std';
+  font-size: 25px;
+  color: #EBEBEB;
+  background-color: #F08F8F;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /* margin:10px;
+  width: 52%;
+  margin: auto;
+  border-radius: 10px;
+
+  padding:7px;
+  text-align:center;
+}
+.buttons_chi{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 26%;
   margin: auto;
   border-radius: 28px;
-  overflow:hidden;
+} */
+
+
+/* Find Us */
+
+.find-us{
+  text-align: center;
+  font-family: Josefin Slab;
+  color: #707070;
+  font-size: 30px;
+}
+
+.find-us-text-eng {
+  text-align: left;
+  padding-left: 25%;
+  color: #707070;
+  font-family: Josefin Sans;
+  line-height: 1.5;
+  font-size: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.find-us-text-chi {
+  text-align: left;
+  padding-left: 25%;
+  color: #707070;
+  font-family: Adobe Fan Heiti Std;
+  line-height: 1.5;
+  font-size: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  margin-top: -180px;
+}
+
+.map-pin {
+  position: absolute;
+  left: 800px;
+  bottom: 25px;
+  z-index: 1000;
+}
+
+.map-image {
+  position: relative;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.Chinese {
+  display: block;
+}
+
+.English {
+  display: none;
 }
