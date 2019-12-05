@@ -18,7 +18,6 @@ header {
     height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: fixed;
     z-index:1000;
 }
 a:link {
@@ -60,19 +59,27 @@ a:active {
     font-size: 25px;
     float: right;
     padding: 20px;
-    padding-right: 130px;
+    /* padding-right: 130px; */
     color: #707070;
     display: flex;
     flex-direction: row;
-    list-style-type: none;
+    /* list-style-type: none; */
     /* font-size: 20px; */
     justify-content: flex-end;
     margin-top: -12px;
     height: 65px;
-    width:100%;
+    width:95%;
     background-color: #F4F0E5;
     text-align:right;
-    margin-left: auto;
+    /* margin-left: auto; */
+    position: fixed;
+    z-index: 1000;
+}
+.navbar.Chinese{
+  margin-top: -90px;
+}
+.navbar.English{
+  padding-top: 40px;
 }
 /* .navbar-item{
   display: flex;
@@ -97,30 +104,27 @@ a:active {
 } */
 .dep{
     font-weight: bold;
-    /* position: absolute; */
     font-size: 40px;
     color: #707070;
     display: flex;
     flex-direction: row;
-    /* list-style-type: none; */
     justify-content: center;
-    padding: auto;
+    /* padding: auto; */
     padding-top: 90px;
-    /* height: 65px; */
-    text-align: center;
     margin: auto;
     line-height: 1.75;
     /* z-index: -1; */
 }
 .dep.English{
   padding-top: 120px;
+  font-weight: bold;
 }
 .list{
   /* padding-left: 60px; */
-  width: 12%;
-  margin: auto;
-
-  /* margin: auto; */
+    /* width: 22%; */
+    margin: auto;
+    line-height: 1.75;
+    text-align: center;
 }
 .navbar-item {
   padding-left: 40px;
@@ -157,11 +161,13 @@ a:active {
 .arm{
   position:relative;
   padding-left: 12%;
-  padding-top: 40px;
-  animation-duration: 1.5s;
+  padding-top: 60px;
+  animation-duration: 2.0s;
   animation-delay: 0.2s;
   animation-name: armslide;
   animation-fill-mode: forwards;
+  /* animation-direction: alternate;
+  animation-iteration-count: infinite; */
 }
 @keyframes armslide {
   100%{
@@ -178,6 +184,8 @@ a:active {
   animation-delay: 0.2s;
   animation-name: pill1slide;
   animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 @keyframes pill1slide {
   100%{
@@ -194,11 +202,15 @@ a:active {
   animation-delay: 0.2s;
   animation-name: pill2slide;
   animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 @keyframes pill2slide {
   100%{
     transform: translate(22px, 6px);
       transform: rotate(-5deg);
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
   }
 }
 .pill_3{
@@ -210,6 +222,8 @@ a:active {
   animation-delay: 0.2s;
   animation-name: pill3slide;
   animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 @keyframes pill3slide {
   100%{
@@ -226,6 +240,8 @@ a:active {
   animation-delay: 0.2s;
   animation-name: pill4slide;
   animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 @keyframes pill4slide {
   100%{
@@ -242,6 +258,8 @@ a:active {
   animation-delay: 0.2s;
   animation-name: pill5slide;
   animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 @keyframes pill5slide {
   100%{
@@ -274,8 +292,9 @@ a:active {
   font-weight: bold;
   font-size: 35px;
   color: #707070;
+  justify-content: center;
   text-align: center;
-  padding-top: 90px;
+  /* padding-top: 90px; */
   /* margin-top: 160px; */
 }
 /* .BS_eng{
@@ -286,7 +305,21 @@ a:active {
   width: 75%;
   margin: auto;
 } */
+.seth{
+  position: relative;
+  padding-left: 15%;
+  margin-top: -100px;
+  width: 15%;
+  transform: rotate(-20deg);
+}
 
+.hat{
+  position: absolute;
+  padding-left: 40%;
+  margin-top: -100px;
+  width: 15%;
+  transform: rotate(16deg);
+}
 .BS{
   /* font-family: 'Adobe Fan Heiti Std'; */
   font-weight: bold;
@@ -398,7 +431,7 @@ h4{
 
 
 .Chinese {
-  display:  block;
+  display: flex;
   font-family: Adobe Fan Heiti Std;
 }
 

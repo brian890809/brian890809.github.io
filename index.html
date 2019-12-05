@@ -3,35 +3,48 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap" rel="stylesheet">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'vst7whh',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
     <title>GR 九如</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/script.js">   </script>
   </head>
   <body style="margin:0;">
-    <!-- <header>
-      <div class="navbar_eng">
-        <div class="navbar-item-eng"><a href="index.html" target-new: none >Home</a></div>
-        <div class="navbar-item-eng"><a href="About_Us.html" target-new: none >About Us</a></div>
-        <div id="trans_img"><a href="Find_Us.html" target-new: none >Find Us</a></div>
+    <header>
+      <div class="navbar English">
+
+        <div class="navbar-item"><a href="index.html" target-new: none >Home</a></div>
+        <div class="navbar-item"><a href="About_Us.html" target-new: none >About Us</a></div>
+        <div class="navbar-item"><a href="Find_Us.html" target-new: none >Find Us</a></div>
 
       </div>
     </header>
     <header>
-      <div class="navbar_chi">
-        <div class="navbar-item-chi"><a href="index.html" target-new: none >首頁</a></div>
-        <div class="navbar-item-chi"><a href="About_Us.html" target-new: none >關於我們</a></div>
-        <div class="navbar-item-chi"><a href="Find_Us.html" target-new: none >尋洽我們</a></div>
-        <div id=trans_img"><img src="assets/img/flag.png" style="width:12%;"></div>
+      <div class="navbar Chinese">
+        <div class="navbar-item"><a href="index.html" target-new: none >首頁</a></div>
+        <div class="navbar-item"><a href="About_Us.html" target-new: none >關於我們</a></div>
+        <div class="navbar-item"><a href="Find_Us.html" target-new: none >尋洽我們</a></div>
+        <!-- <div id=trans_img"><img src="assets/img/flag.png" style="width:12%;"></div> -->
       </div>
-    </header> -->
+    </header>
 
-    <header>
+    <!-- <header>
       <nav>
         <ul class="navbar English title">
           <li class="navbar-item  English"><a href="index.html">Home</a></li>
           <li class="navbar-item  English"><a href="About_Us.html">About Us</a></li>
           <li class="navbar-item  English"><a href="Find_Us.html">Find Us</a></li>
-          <!-- <li id="trans_img"><img src="assets/img/flag.png" style="width:12%;"></li> -->
-        </ul>
+          <!-- <li id="trans_img"><img src="assets/img/flag.png" style="width:12%;"></li>
+         </ul>
 
       </nav>
     </header>
@@ -40,12 +53,12 @@
         <ul class="navbar Chinese">
           <li class="navbar-item  Chinese"><a href="index.html">首頁</a></li>
           <li class="navbar-item  Chinese"><a href="About_Us.html">關於我們</a></li>
-          <!-- <li class="navbar-item  Chinese"><a href="portfolio.html">服務社區</a></li> -->
+          <!-- <li class="navbar-item  Chinese"><a href="portfolio.html">服務社區</a></li>
           <li class="navbar-item  Chinese"><a href="Find_Us.html">尋洽我們</a></li>
-          <!-- <li id="trans_img"><img src="assets/img/flag.png" style="width:12%;"></li> -->
+          <!-- <li id="trans_img"><img src="assets/img/flag.png" style="width:12%;"></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <div class="trans_img">
       <!-- <img src="assets/img/flag.png" style="width:12%;" onclick="myFunction()"> -->
@@ -62,15 +75,15 @@
       <div class="list"> 服務社區 </div>
       <div class="list"> 尋洽我們 </div>
     </div> -->
-    <div class="dep English">
-      <div class="list"> Pediatrics </div>
-      <div class="list"> Otorhinolaryngology </div>
-      <div class="list"> General Practice </div>
+    <div class="dep English title">
+      <p class="list"> Pediatrics </p>
+      <p class="list"> Otorhinolaryngology </p>
+      <p class="list"> General Practice </p>
     </div>
     <div class="dep Chinese">
-      <div class="list"> 小兒科 </div>
-      <div class="list"> 耳鼻喉科 </div>
-      <div class="list"> 家醫科 </div>
+      <p class="list"> 小兒科 </p>
+      <p class="list"> 耳鼻喉科 </p>
+      <p class="list"> 家醫科 </p>
     </div>
 
     <div class="images">
